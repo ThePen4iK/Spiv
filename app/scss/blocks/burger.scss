@@ -1,0 +1,73 @@
+.burger {
+  outline: none;
+  border: none;
+
+  width: 25px;
+  height: 16px;
+
+  position: relative;
+
+  background: transparent;
+
+  @media(any-hover: hover) {
+    &:hover {
+      cursor: pointer;
+    }
+    @media(min-width: 992px) {
+    display: none;
+    }
+  }
+
+  &__line {
+    display: block;
+    position: absolute;
+    width: 25px;
+    height: 3px;
+    background: #000000;
+    transition-property: background-color, transform;
+    transition-duration: 0.3s;
+
+    &:before {
+      content: '';
+      position: absolute;
+      top: -8px;
+      left: 0;
+
+      width: 25px;
+      height: 3px;
+      background: #000000;
+      transition-property: background-color, transform;
+      transition-duration: 0.3s;
+    }
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 8px;
+      left: 0;
+      width: 25px;
+      height: 3px;
+      background: #000000;
+      transition-property: background-color, transform;
+      transition-duration: 0.3s;
+    }
+  }
+
+  &.clicked {
+    .burger__line {
+      background: transparent;
+
+      &:before {
+        //background: #ffffff;
+        transform: translateY(8px) rotate(45deg);
+      }
+
+      &:after {
+        //background: #ffffff;
+        transform: translateY(-8px) rotate(-45deg);
+      }
+
+
+    }
+  }
+}

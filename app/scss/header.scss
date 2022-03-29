@@ -1,0 +1,23 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  z-index: 20;
+  padding-top: 20px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &--open{
+    .navigation{
+      transform: translateY(0);
+      opacity: 1;
+      overflow: auto;
+    }
+  }
+}
