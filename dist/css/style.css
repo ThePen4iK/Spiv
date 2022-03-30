@@ -700,6 +700,9 @@ img {
   width: 100%;
   z-index: 20;
   padding-top: 20px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .header__container {
   display: -webkit-box;
@@ -718,6 +721,16 @@ img {
           transform: translateY(0);
   opacity: 1;
   overflow: auto;
+}
+.header__fixed {
+  padding-top: 10px;
+  background: #FFFFFF;
+  -webkit-box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+          box-shadow: 0 3px 5px rgba(57, 63, 72, 0.3);
+  padding-bottom: 10px;
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .start {
