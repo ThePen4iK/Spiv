@@ -3,9 +3,9 @@
 //@include font("Plain", "Plain Regular", 400, normal);
 //@include font("Plain", "Plain Regular Italic", 400, normal);
 //@include font("Plain", "Plain Black", 900, normal);
-//@font-face {
-//  font-family: "Druk Wide Cyr";
-//  src: url("../fonts/DrukWideCyrMedium.otf") format("opentype");
-//  font-style: normal;
-//  font-weight: 500;
-//}
+@font-face {
+  font-family: "Vela Sans";
+  src: url("../fonts/VelaSansRegular.otf") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}

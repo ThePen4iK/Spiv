@@ -1,0 +1,89 @@
+.about {
+
+  &__info {
+    margin-bottom: 60px;
+    @media(min-width: 768px) {
+      margin-bottom: 80px;
+    }
+  }
+
+  &__text {
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+      @media(min-width: 768px) {
+        margin-bottom: 40px;
+      }
+    }
+
+    @media(min-width: 768px) {
+      font-size: 56px;
+      line-height: 67px;
+    }
+  }
+
+  &__list {
+    list-style: none;
+    @media(min-width: 992px) {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin-bottom: 40px;
+      @media(min-width: 992px) {
+        margin-bottom: 0;
+      }
+    }
+
+    @media(min-width: 992px) {
+      flex: 0 0 426px;
+    }
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 427px;
+    height: 180px;
+    object-fit: cover;
+
+
+    margin-bottom: 20px;
+    @media(min-width: 992px) {
+      height: 260px;
+    }
+  }
+
+  &__name {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+  }
+
+  &__prof {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #000000;
+  }
+}

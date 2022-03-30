@@ -1,0 +1,23 @@
+.social{
+  list-style: none;
+
+  display: flex;
+  &__item{
+    &:not(:last-child){
+      margin-right: 20px;
+    }
+  }
+
+  &__link{
+
+  }
+
+  &__icon{
+    width: 24px;
+    height: 24px;
+    @media(min-width: 768px){
+      width: 28px;
+      height: 28px;
+    }
+  }
+}
