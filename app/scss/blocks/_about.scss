@@ -32,36 +32,31 @@
 
   &__list {
     list-style: none;
-    @media(min-width: 992px) {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    gap: 40px;
+    @media(min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media(min-width: 992px){
+      grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
   &__item {
-    &:not(:last-child) {
-      margin-bottom: 40px;
-      @media(min-width: 992px) {
-        margin-bottom: 0;
-      }
-    }
 
-    @media(min-width: 992px) {
-      flex: 0 0 426px;
-    }
   }
 
   &__img {
     width: 100%;
     max-width: 427px;
-    height: 180px;
+    height: 100%;
+    max-height: 180px;
+
     object-fit: cover;
-
-
     margin-bottom: 20px;
-    @media(min-width: 992px) {
-      height: 260px;
+    @media(min-width: 460px){
+      max-height: 260px;
     }
   }
 
