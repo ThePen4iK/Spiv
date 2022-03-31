@@ -613,14 +613,14 @@ img {
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
-    -webkit-transform: translate(-5px, 1px);
-        -ms-transform: translate(-5px, 1px);
-            transform: translate(-5px, 1px);
+    -webkit-transform: translate(-1px, 0.25px);
+        -ms-transform: translate(-1px, 0.25px);
+            transform: translate(-1px, 0.25px);
   }
   .navigation__link:hover .navigation__icon--move {
-    -webkit-transform: translate(5px, -1px);
-        -ms-transform: translate(5px, -1px);
-            transform: translate(5px, -1px);
+    -webkit-transform: translate(1px, -0.25px);
+        -ms-transform: translate(1px, -0.25px);
+            transform: translate(1px, -0.25px);
   }
 }
 @media (min-width: 768px) {
