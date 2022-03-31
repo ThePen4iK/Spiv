@@ -809,10 +809,16 @@ img {
   list-style: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
   gap: 40px;
   margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  .work__list {
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .work__item-title {
   font-family: "Roboto", sans-serif;
