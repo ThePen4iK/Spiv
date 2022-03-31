@@ -644,6 +644,9 @@ img {
   -webkit-transform: translate(-5px, 1px);
       -ms-transform: translate(-5px, 1px);
           transform: translate(-5px, 1px);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .navigation__icon--move {
   position: absolute;
