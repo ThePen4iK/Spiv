@@ -59,7 +59,7 @@ function hideTabContent() {
 }
 
 function showTabContent(i = 0) {
-    tabsContent[i].style.display = "flex";
+    tabsContent[i].style.display = "";
     tabs[i].classList.add("tabs__item--active");
 }
 

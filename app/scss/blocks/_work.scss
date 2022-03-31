@@ -17,8 +17,8 @@
 
   &__list{
     list-style: none;
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     gap: 40px;
 
     margin-bottom: 40px;
