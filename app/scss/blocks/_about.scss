@@ -6,19 +6,28 @@
       margin-bottom: 80px;
     }
 
-    & p,ul,ol, h1, h2, h3, h4, h5, h6 {
+    & p, ul, ol, h1, h2, h3, h4, h5, h6 {
       font-family: "Roboto", sans-serif;
       font-style: normal;
       text-align: left;
       color: #000000;
+      font-size: 28px;
+      line-height: 39px;
 
       &:not(:last-child) {
         margin-bottom: 20px;
         @media(min-width: 768px) {
           margin-bottom: 40px;
+
         }
       }
+
+      @media(min-width: 768px) {
+        font-size: 56px;
+        line-height: 67px;
+      }
     }
+
     & p, ul, ol {
       font-weight: 400;
       font-size: 28px;
@@ -29,9 +38,10 @@
         line-height: 67px;
       }
     }
-    & ul, ol{
+
+    & ul, ol {
       padding-left: 25px;
-      @media(min-width: 768px){
+      @media(min-width: 768px) {
         padding-left: 50px;
       }
     }
@@ -42,12 +52,12 @@
   &__list {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     gap: 40px;
     @media(min-width: 768px) {
       grid-template-columns: 1fr 1fr;
     }
-    @media(min-width: 992px){
+    @media(min-width: 992px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
@@ -64,7 +74,7 @@
 
     object-fit: cover;
     margin-bottom: 20px;
-    @media(min-width: 460px){
+    @media(min-width: 460px) {
       max-height: 260px;
     }
   }
