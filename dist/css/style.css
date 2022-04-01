@@ -1078,8 +1078,6 @@ img {
   font-style: normal;
   text-align: left;
   color: #000000;
-  font-size: 28px;
-  line-height: 39px;
 }
 .about__info p:not(:last-child), .about__info ul:not(:last-child), .about__info ol:not(:last-child), .about__info h1:not(:last-child), .about__info h2:not(:last-child), .about__info h3:not(:last-child), .about__info h4:not(:last-child), .about__info h5:not(:last-child), .about__info h6:not(:last-child) {
   margin-bottom: 20px;
@@ -1087,12 +1085,6 @@ img {
 @media (min-width: 768px) {
   .about__info p:not(:last-child), .about__info ul:not(:last-child), .about__info ol:not(:last-child), .about__info h1:not(:last-child), .about__info h2:not(:last-child), .about__info h3:not(:last-child), .about__info h4:not(:last-child), .about__info h5:not(:last-child), .about__info h6:not(:last-child) {
     margin-bottom: 40px;
-  }
-}
-@media (min-width: 768px) {
-  .about__info p, .about__info ul, .about__info ol, .about__info h1, .about__info h2, .about__info h3, .about__info h4, .about__info h5, .about__info h6 {
-    font-size: 56px;
-    line-height: 67px;
   }
 }
 .about__info p, .about__info ul, .about__info ol {
