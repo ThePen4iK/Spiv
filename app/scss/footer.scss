@@ -1,6 +1,7 @@
 .footer {
   padding-bottom: 20px;
   @media(min-width: 768px){
+    padding-top: 80px;
     padding-bottom: 40px;
   }
   &__container {
@@ -20,5 +21,9 @@
       margin-bottom: 0;
     }
   }
-
+  &--mod{
+    @media(min-width: 768px){
+      padding-bottom: 150px;
+    }
+  }
 }

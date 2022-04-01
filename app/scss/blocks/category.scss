@@ -5,9 +5,7 @@
     flex-wrap: wrap;
     transition: all 0.5s ease-in-out;
     @media(min-width: 768px) {
-      transform: translate(24px,-119px);
-      opacity: 0;
-      transition: all 0.5s ease-in-out;
+
     }
   }
 
@@ -16,19 +14,7 @@
   }
 
   &__link {
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px;
-    letter-spacing: 0em;
-    text-align: left;
-    text-decoration: none;
-    color: #000000;
-    @media(min-width: 768px) {
-      color: #FFFFFF;
-      font-size: 22px;
-    }
+
 
   }
 }

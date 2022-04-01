@@ -5,30 +5,39 @@
     @media(min-width: 768px) {
       margin-bottom: 80px;
     }
-  }
 
-  &__text {
-    font-family: "Roboto", sans-serif;
-    font-size: 28px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 39px;
-    letter-spacing: 0em;
-    text-align: left;
-    color: #000000;
+    & p,ul,ol, h1, h2, h3, h4, h5, h6 {
+      font-family: "Roboto", sans-serif;
+      font-style: normal;
+      text-align: left;
+      color: #000000;
 
-    &:not(:last-child) {
-      margin-bottom: 20px;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+        @media(min-width: 768px) {
+          margin-bottom: 40px;
+        }
+      }
+    }
+    & p, ul, ol {
+      font-weight: 400;
+      font-size: 28px;
+      line-height: 39px;
+      letter-spacing: 0em;
       @media(min-width: 768px) {
-        margin-bottom: 40px;
+        font-size: 56px;
+        line-height: 67px;
+      }
+    }
+    & ul, ol{
+      padding-left: 25px;
+      @media(min-width: 768px){
+        padding-left: 50px;
       }
     }
 
-    @media(min-width: 768px) {
-      font-size: 56px;
-      line-height: 67px;
-    }
   }
+
 
   &__list {
     list-style: none;
