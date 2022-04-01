@@ -601,9 +601,9 @@ img {
   text-align: left;
   color: #000000;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -625,6 +625,9 @@ img {
 }
 @media (min-width: 768px) {
   .navigation__link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     font-size: 32px;
     line-height: 32px;
   }

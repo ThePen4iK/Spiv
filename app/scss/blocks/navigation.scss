@@ -1,4 +1,4 @@
-.navigation{
+.navigation {
   position: absolute;
   top: 0;
   left: 0;
@@ -19,7 +19,7 @@
   opacity: 0;
 
 
-  @media(min-width: 992px){
+  @media(min-width: 992px) {
     position: static;
     width: auto;
     height: auto;
@@ -30,12 +30,14 @@
     background: transparent;
 
   }
+
   &__list {
     list-style: none;
-    @media(min-width: 992px){
+    @media(min-width: 992px) {
       display: flex;
     }
-    &--footer{
+
+    &--footer {
       display: flex;
       flex-wrap: wrap;
     }
@@ -43,19 +45,19 @@
 
   &__item {
 
-    &:not(:last-child){
+    &:not(:last-child) {
       margin-bottom: 40px;
-      @media(min-width: 992px){
+      @media(min-width: 992px) {
         margin-bottom: 0;
         margin-right: 40px;
       }
     }
 
-    &--footer{
-      &:not(:last-child){
+    &--footer {
+      &:not(:last-child) {
         margin-bottom: 0px;
         margin-right: 38px;
-        @media(min-width: 768px){
+        @media(min-width: 768px) {
           margin-right: 40px;
         }
       }
@@ -74,33 +76,38 @@
     color: #000000;
     position: relative;
 
-    display: flex;
+    display: inline-flex;
     align-items: flex-end;
 
-    @media(any-hover: hover){
-      &:hover .navigation__icon{
+    @media(any-hover: hover) {
+      &:hover .navigation__icon {
         transition: all 0.5s ease-in-out;
         transform: translate(-1px, 0.25px);
-        &--move{
+
+        &--move {
           transform: translate(1px, -0.25px);
         }
       }
     }
-    @media(min-width: 768px){
+    @media(min-width: 768px) {
+      display: flex;
+
       font-size: 32px;
       line-height: 32px;
     }
-    &--footer{
+
+    &--footer {
 
     }
-    &--active{
+
+    &--active {
       font-size: 32px;
       font-weight: 700;
       line-height: 32px;
     }
   }
 
-  &--footer{
+  &--footer {
     position: static;
     opacity: 1;
     padding: 0;
@@ -111,16 +118,17 @@
   }
 
 
-
-  &__icon{
+  &__icon {
     transform: translate(0px, 0px);
 
     transition: all 0.5s ease-in-out;
-    &--move{
+
+    &--move {
       position: absolute;
       bottom: 0;
       right: 0;
 
-      transition: all 0.5s ease-in-out;    }
+      transition: all 0.5s ease-in-out;
+    }
   }
 }
