@@ -37,7 +37,46 @@
         padding-left: 50px;
       }
     }
-
+    &h2{
+      font-size: 28px;
+      line-height: 39px;
+      @media(min-width: 768px){
+        font-size: 56px;
+        line-height: 67px;
+      }
+    }
+    &h3{
+      font-size: 27px;
+      line-height: 39px;
+      @media(min-width: 768px){
+        font-size: 55px;
+        line-height: 67px;
+      }
+    }
+    &h4{
+      font-size: 26px;
+      line-height: 39px;
+      @media(min-width: 768px){
+        font-size: 54px;
+        line-height: 67px;
+      }
+    }
+    &h5{
+      font-size: 25px;
+      line-height: 39px;
+      @media(min-width: 768px){
+        font-size: 53px;
+        line-height: 67px;
+      }
+    }
+    &h6{
+      font-size: 24px;
+      line-height: 39px;
+      @media(min-width: 768px){
+        font-size: 52px;
+        line-height: 67px;
+      }
+    }
   }
 
 
