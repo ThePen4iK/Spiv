@@ -66,6 +66,7 @@
 
   &__link {
     text-decoration: none;
+
     font-family: "Roboto", sans-serif;
     font-size: 24px;
     font-style: normal;
@@ -90,7 +91,6 @@
       }
     }
     @media(min-width: 768px) {
-      display: flex;
 
       font-size: 32px;
       line-height: 32px;
