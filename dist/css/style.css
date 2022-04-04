@@ -897,22 +897,30 @@ img {
   text-decoration: none;
   color: #000000;
 }
+.work__category--desktop {
+  display: none;
+}
 @media (min-width: 768px) {
   .work__category {
     color: #FFFFFF;
     font-size: 22px;
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
+    line-height: 140%;
     width: 100%;
-    max-width: 612px;
-    -webkit-transform: translate(24px, -119px);
-        -ms-transform: translate(24px, -119px);
-            transform: translate(24px, -119px);
     opacity: 0;
     -webkit-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+  }
+  .work__category--mobile {
+    display: none;
+  }
+  .work__category--desktop {
+    position: absolute;
+    bottom: 24px;
+    left: 24px;
+    z-index: 1;
+    display: block;
+    max-width: calc(100% - 48px);
   }
 }
 .work__see {
