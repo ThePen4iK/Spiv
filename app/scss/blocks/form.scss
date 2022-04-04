@@ -1,9 +1,15 @@
 .form{
   margin-bottom: 60px;
+  font-size: 14px;
+
+
   @media(min-width: 992px){
-    flex: 0 0 380px;
+
+    width: 100%;
+
     margin-bottom: 0;
-    margin-left: 200px;
+    margin-left: auto;
+    max-width: 380px;
   }
   &__wrap{
     margin-bottom: 20px;
@@ -16,6 +22,9 @@
     padding: 14px 15px;
     &:focus{
       outline: none;
+      &::placeholder{
+        opacity: 0;
+      }
     }
     &::placeholder{
       font-family: "Roboto", sans-serif;
@@ -43,6 +52,9 @@
 
     &:focus{
       outline: none;
+      &::placeholder{
+        opacity: 0;
+      }
     }
     &::placeholder{
       font-family: "Roboto", sans-serif;
@@ -59,4 +71,19 @@
       }
     }
   }
+}
+.visually-hidden,
+input[type=checkbox].visually-hidden,
+input[type=radio].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%)
 }

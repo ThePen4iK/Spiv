@@ -91,7 +91,7 @@ function scripts() {
       .pipe(concat("script.js"))
       .pipe(dest(path.build.js))
 
-      .pipe(uglify())
+      // .pipe(uglify())
 
       .pipe(rename({
         suffix: ".min"

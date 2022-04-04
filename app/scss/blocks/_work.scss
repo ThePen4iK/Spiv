@@ -1,5 +1,7 @@
 .work{
-
+  &--mod{
+    padding-bottom: 40px;
+  }
   &__title{
     font-family: "Roboto", sans-serif;
     font-size: 36px;
@@ -24,6 +26,10 @@
     margin-bottom: 40px;
     @media(min-width: 768px){
       grid-template-columns: 1fr 1fr;
+    }
+
+    &--mod{
+      margin-bottom: 0;
     }
   }
   &__link{
