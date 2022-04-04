@@ -48,6 +48,10 @@
     width: 100%;
     max-width: 350px;
     background-color: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
     @media(min-width: 768px){
       font-size: 20px;
       line-height: 20px;
