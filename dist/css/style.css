@@ -1223,6 +1223,9 @@ img {
   max-height: 180px;
   -o-object-fit: cover;
      object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  overflow: hidden;
   margin-bottom: 20px;
 }
 @media (min-width: 460px) {

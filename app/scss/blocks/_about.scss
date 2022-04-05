@@ -104,6 +104,9 @@
     max-height: 180px;
 
     object-fit: cover;
+    object-position: center;
+
+    overflow: hidden;
     margin-bottom: 20px;
     @media(min-width: 460px){
       max-height: 260px;
