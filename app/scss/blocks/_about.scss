@@ -2,11 +2,20 @@
 
   &__info {
     margin-bottom: 60px;
+
     @media(min-width: 768px) {
       margin-bottom: 80px;
     }
 
-    & p,ul,ol, h1, h2, h3, h4, h5, h6 {
+    & p,
+    ul,
+    ol,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
       font-family: "Roboto", sans-serif;
       font-style: normal;
       text-align: left;
@@ -14,65 +23,82 @@
 
       &:not(:last-child) {
         margin-bottom: 20px;
-        @media(min-width: 768px) {
-          margin-bottom: 40px;
+        // @media(min-width: 768px) {
+        //   margin-bottom: 0px;
 
-        }
+        // }
       }
 
     }
-    & p, ul, ol {
+
+    & p,
+    ul,
+    ol {
       font-weight: 400;
       font-size: 28px;
       line-height: 39px;
       letter-spacing: 0em;
+
+      @media(min-width: 768px) {
+        font-size: 46px;
+        line-height: 120%;
+      }
+    }
+
+    & ul,
+    ol {
+      padding-left: 25px;
+
+      @media(min-width: 768px) {
+        padding-left: 50px;
+      }
+    }
+
+    & h2 {
+      font-size: 28px;
+      line-height: 39px;
+
       @media(min-width: 768px) {
         font-size: 56px;
         line-height: 67px;
       }
     }
-    & ul, ol{
-      padding-left: 25px;
-      @media(min-width: 768px){
-        padding-left: 50px;
-      }
-    }
-    & h2{
-      font-size: 28px;
-      line-height: 39px;
-      @media(min-width: 768px){
-        font-size: 56px;
-        line-height: 67px;
-      }
-    }
-    & h3{
+
+    & h3 {
       font-size: 26px;
       line-height: 39px;
-      @media(min-width: 768px){
+
+      @media(min-width: 768px) {
         font-size: 54px;
         line-height: 67px;
       }
     }
-    & h4{
+
+    & h4 {
       font-size: 24px;
       line-height: 39px;
-      @media(min-width: 768px){
+
+      @media(min-width: 768px) {
         font-size: 52px;
         line-height: 67px;
       }
     }
-    & h5{
+
+    & h5 {
       font-size: 22px;
       line-height: 39px;
-      @media(min-width: 768px){
+
+      @media(min-width: 768px) {
         font-size: 50px;
         line-height: 67px;
       }
     }
-    & h6{
+
+    & h6 {
       font-size: 20px;
       line-height: 39px;
-      @media(min-width: 768px){
+
+      @media(min-width: 768px) {
         font-size: 48px;
         line-height: 67px;
       }
@@ -83,33 +109,48 @@
   &__list {
     list-style: none;
     display: grid;
-    grid-template-columns: 1fr ;
+    grid-template-columns: 1fr;
     gap: 40px;
+
     @media(min-width: 768px) {
       grid-template-columns: 1fr 1fr;
     }
-    @media(min-width: 992px){
+
+    @media(min-width: 992px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
 
-  &__item {
-
-  }
+  &__item {}
 
   &__img {
+    position: relative;
+
     width: 100%;
     max-width: 427px;
-    height: 100%;
-    max-height: 180px;
 
-    object-fit: cover;
-    object-position: center;
+    margin-bottom: 20px;
 
     overflow: hidden;
-    margin-bottom: 20px;
-    @media(min-width: 460px){
-      max-height: 260px;
+
+    &::after {
+      content: '';
+
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    img {
+      position: absolute;
+
+      top: 0;
+      left: 0;
+
+      width: 100%;
+      height: 100%;
+
+      object-fit: cover;
+      object-position: center;
     }
   }
 
