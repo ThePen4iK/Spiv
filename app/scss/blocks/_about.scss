@@ -110,7 +110,8 @@
     list-style: none;
     display: grid;
     grid-template-columns: 1fr;
-    gap: 40px;
+    column-gap: 20px;
+    row-gap: 40px;
 
     @media(min-width: 768px) {
       grid-template-columns: 1fr 1fr;
@@ -127,7 +128,7 @@
     position: relative;
 
     width: 100%;
-    max-width: 427px;
+    // max-width: 427px;
 
     margin-bottom: 20px;
 
