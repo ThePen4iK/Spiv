@@ -18,7 +18,12 @@
     .navigation {
       display: flex;
 
-      align-items: center;
+      flex-direction: column;
+
+      align-items: flex-star;
+      justify-content: center;
+
+      padding-left: calc(76 / 375 * 100vw);
 
       transform: translateY(0);
       opacity: 1;
