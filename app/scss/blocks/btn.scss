@@ -3,6 +3,10 @@
   border: none;
 
   cursor: pointer;
+
+  display: flex;
+  align-self: center;
+  justify-content: center;
   &__send{
     width: 100%;
     max-width: 380px;
