@@ -164,10 +164,11 @@
   <main class="main">
     <section class="section start js-main">
         <div class="start__bg">
-            <video  autoplay="autoplay" controls="true" webkit-playsinline muted loop playsinline >
+            <video class="start__video"  autoplay="autoplay" controls="true" webkit-playsinline muted loop playsinline >
                 <source src="../img/video/video-2.mp4">
             </video>
-<!--            <picture class="picture">-->
+            <canvas class="canvas"></canvas>
+            <!--            <picture class="picture">-->
 <!--                <source-->
 <!--                        media="(min-width: 600px)"-->
 <!--                        srcset="../img/start-bg-desck.jpg, ../img/start-bg-desck@2x.jpg 1.25x"-->
@@ -427,6 +428,7 @@
         </nav>
     </div>
 </footer>
+    <script src="./js/canvas-video-player.js"></script>
   <script src="./js/script.js"></script>
   </body>
 </html>

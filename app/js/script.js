@@ -31,7 +31,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const video = document.querySelector("video");
     if (video) {
         video.play();
-        console.log(1)
     }
+    const isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
+    console.log(isIOS)
+
+    if (isIOS) {
+
+        const canvasVideo = new CanvasVideoPlayer({
+            videoSelector: '.start__video',
+            canvasSelector: '.canvas',
+            timelineSelector: false,
+            autoplay: true,
+            makeLoop: true,
+            pauseOnClick: false,
+            audio: false
+        });
+
+    }else {
+
+        // Use HTML5 video
+        document.querySelectorAll('.canvas')[0].style.display = 'none';
+
+    }
+
     console.log("DOM fully loaded and parsed");
 })
