@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (isIOS) {
 
         const canvasVideo = new CanvasVideoPlayer({
-            videoSelector: '.start__video',
+            videoSelector: 'video',
             canvasSelector: '.canvas',
             timelineSelector: false,
             autoplay: true,
