@@ -801,7 +801,6 @@ img {
   width: 100%;
   height: 100%;
 }
-.start__bg video,
 .start__bg img {
   width: 100%;
   height: 100%;
@@ -814,8 +813,10 @@ img {
 .start__bg canvas {
   width: 100%;
   height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+}
+.start__bg video {
+  height: 100%;
+  display: block;
 }
 .start__title {
   font-family: "Roboto", sans-serif;
