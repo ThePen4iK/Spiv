@@ -1,9 +1,27 @@
 <section class="section start js-main">
         <div class="start__bg">
-            <video   autoplay="autoplay" webkit-playsinline muted loop playsinline >
-                <source src="../img/video/video-2.mp4">
+
+            <video autoPlay="false" id="bg-video"
+                   class="video-js vjs-default-skin"
+                   style="position:absolute;top:0;left:0;overflow:hidden;z-index:-998;"
+                   height="100%"
+                   width="100%"
+                   loop >
+                <source src="../img/video/video-2.mp4" type="video/mp4">
             </video>
-            <canvas class="canvas"></canvas>
+<!--            <video   autoplay="autoplay" preload="metadata" src="../img/video/video-2.mp4" controls webkit-playsinline muted loop playsinline >-->
+<!--                <source src="../img/video/video-2.mp4">-->
+<!--            </video>-->
+<!--            <video autoPlay="false" id="bg-video"-->
+<!--                   class="video-js vjs-default-skin"-->
+<!--                   preload="none"-->
+<!--                   style="position:absolute;top:0;left:0;overflow:hidden; z-index:-998"-->
+<!--                   height="100vh"-->
+<!--                   width="100vw"-->
+<!--                   loop >-->
+<!--                <source src="../img/video/video-2.mp4" type="video/mp4">-->
+<!--            </video>-->
+<!--            <canvas class="canvas"></canvas>-->
             <!--            <picture class="picture">-->
 <!--                <source-->
 <!--                        media="(min-width: 600px)"-->

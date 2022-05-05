@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-  @@include('blocks/_head.html')
-  <body>
-    @@include('blocks/_header.html')
-  <main class="main">
+@@include('blocks/_head.html')
+<body>
+@@include('blocks/_header.html')
+<main class="main">
     @@include('blocks/_start.html')
 
     @@include('blocks/_work.html')
-  </main>
-  @@include('blocks/_footer.html')
-    <script src="./js/canvas-video-player.js"></script>
-  <script src="./js/script.js"></script>
-  </body>
+</main>
+@@include('blocks/_footer.html')
+<!--    <script src="./js/canvas-video-player.js"></script>-->
+<script src="https://vjs.zencdn.net/5.16.0/video.min.js"></script>
+<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+<script src="https://rawgit.com/matthojo/videojs-Background/master/dist/videojs-background.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.3.3/videojs-contrib-hls.min.js"></script>
+<script src="./js/script.js"></script>
+</body>
 </html>
