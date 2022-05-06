@@ -303,47 +303,11 @@ document.addEventListener("DOMContentLoaded", function () {
     })
 
     const video = document.querySelector("video");
-    // let videoH = video.offsetHeight;
-    // let videoW = video.offsetWidth;
-    // console.log(videoH)
-    // console.log(videoW, "---")
-    //
-    // const canvas = document.querySelector(".canvas");
-    // console.log(canvas)
-    //
-    // let canvasH = canvas.offsetHeight;
-    // let canvasW = canvas.offsetWidth;
-    // console.log(canvasH)
-    // console.log(canvasW)
-    // if (video) {
-    //     video.play();
-    // }
-    // const isIOS = /iPad|iPhone|iPod/.test(navigator.platform);
-    // console.log(isIOS)
-    //
-    // if (isIOS) {
-    //
-    //     const canvasVideo = new CanvasVideoPlayer({
-    //         videoSelector: 'video',
-    //         canvasSelector: '.canvas',
-    //         timelineSelector: false,
-    //         autoplay: true,
-    //         makeLoop: true,
-    //         pauseOnClick: false,
-    //         audio: false
-    //     });
-    //
-    // }else {
-    //
-    //     // Use HTML5 video
-    //     document.querySelectorAll('.canvas')[0].style.display = 'block';
-    //
-    // }
-    videojs('bg-video').Background({
-        volume: '0',
-        mediaType: 'html5',
-        autoPlay: 'false'
-    });
+
+    if (video) {
+        video.play();
+    }
+
     console.log("DOM fully loaded and parsed");
 })
 document.addEventListener("DOMContentLoaded",(function(){console.log("DOM fully loaded and parsed")}));

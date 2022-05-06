@@ -810,6 +810,12 @@ img {
      object-position: center;
   pointer-events: none;
 }
+.start__bg video {
+  width: auto;
+  height: auto;
+  min-width: 100%;
+  min-height: 100%;
+}
 .start__title {
   font-family: "Roboto", sans-serif;
   font-size: 80px;

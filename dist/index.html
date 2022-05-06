@@ -6,7 +6,6 @@
   <meta name="viewport"
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://vjs.zencdn.net/5.16.0/video-js.min.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css" />
@@ -166,27 +165,18 @@
     <section class="section start js-main">
         <div class="start__bg">
 
-            <video autoPlay="false" id="bg-video"
-                   class="video-js vjs-default-skin"
-                   style="position:absolute;top:0;left:0;overflow:hidden;z-index:-998;height: 100%"
-                   height="100%"
-                   width="100%"
-                   loop >
-                <source src="../img/video/video-2.mp4" type="video/mp4">
-            </video>
-<!--            <video   autoplay="autoplay" preload="metadata" src="../img/video/video-2.mp4" controls webkit-playsinline muted loop playsinline >-->
-<!--                <source src="../img/video/video-2.mp4">-->
-<!--            </video>-->
 <!--            <video autoPlay="false" id="bg-video"-->
 <!--                   class="video-js vjs-default-skin"-->
-<!--                   preload="none"-->
-<!--                   style="position:absolute;top:0;left:0;overflow:hidden; z-index:-998"-->
-<!--                   height="100vh"-->
-<!--                   width="100vw"-->
+<!--                   style="position:absolute;top:0;left:0;overflow:hidden;z-index:-998;height: 100%"-->
+<!--                   height="100%"-->
+<!--                   width="100%"-->
 <!--                   loop >-->
 <!--                <source src="../img/video/video-2.mp4" type="video/mp4">-->
 <!--            </video>-->
-<!--            <canvas class="canvas"></canvas>-->
+            <video   autoplay preload="metadata"  muted loop playsinline poster="../img/start-bg.jpg">
+                <source src="../img/video/video-2.mp4">
+            </video>
+
             <!--            <picture class="picture">-->
 <!--                <source-->
 <!--                        media="(min-width: 600px)"-->
@@ -447,11 +437,6 @@
         </nav>
     </div>
 </footer>
-<!--    <script src="./js/canvas-video-player.js"></script>-->
-<script src="https://vjs.zencdn.net/5.16.0/video.min.js"></script>
-<script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
-<script src="https://rawgit.com/matthojo/videojs-Background/master/dist/videojs-background.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/videojs-contrib-hls/5.3.3/videojs-contrib-hls.min.js"></script>
 <script src="./js/script.js"></script>
 </body>
 </html>
