@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
         rootElement.classList.toggle('block');
     })
 
-    const video = document.querySelector("video");
-
-    if (video) {
-        video.play();
-    }
+        // const video = document.querySelector("video");
+        //
+        // if (video) {
+        //     video.play();
+        // }
 
     console.log("DOM fully loaded and parsed");
 })
