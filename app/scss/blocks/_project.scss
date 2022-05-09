@@ -1,6 +1,27 @@
-.project{
+.project {
 
-  &__wrapper{
+  &__wrapper {}
 
+  &__border {
+    padding-left: 16px;
+
+    border-left: 1px solid #000000;
+
+    &--first {
+      padding-bottom: 20px;
+    }
+
+    &--second {
+      padding-bottom: 40px;
+    }
+
+    @media(min-width: 600px) {
+      padding-bottom: 0;
+      padding-left: 20px;
+    }
+  }
+
+  &__banner {
+    min-height: 240px;
   }
 }
